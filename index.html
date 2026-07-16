@@ -38,8 +38,8 @@
     const ainuBaseHue = 48;        // warm amber gold
     const ainuSat = 50;            // muted, like old paper
     const ainuBri = 82;            // soft
-    const particleCount = 700;     // dense but delicate
-    const flowSpeed = 0.0012;      // contemplative
+    const ainuParticleCount = 700;     // dense but delicate
+    const ainuFlowSpeed = 0.0012;      // contemplative
     
     new p5(function(p) {
       let particles = [];
@@ -55,7 +55,7 @@
         cols = p.floor(p.width / scl);
         rows = p.floor(p.height / scl);
         flowField = new Array(cols * rows);
-        for (let i = 0; i < particleCount; i++) {
+        for (let i = 0; i < ainuParticleCount; i++) {
           particles.push({
             pos: p.createVector(p.random(p.width), p.random(p.height)),
             vel: p.createVector(0, 0),
@@ -78,7 +78,7 @@
           }
           yoff += 0.1;
         }
-        zoff += flowSpeed;
+        zoff += ainuFlowSpeed;
 
         for (let i = 0; i < particles.length; i++) {
           let pt = particles[i];
@@ -111,8 +111,8 @@
     const silboHue = 195;      // cyan-teal
     const silboSat = 55;       // muted, like sea foam
     const silboBri = 90;       // bright, airy
-    const particleCount = 600; // wind-like
-    const flowSpeed = 0.0015;  // meditative
+    const silboParticleCount = 600; // wind-like
+    const silboFlowSpeed = 0.0015;  // meditative
 
     new p5(function(p) {
       let particles = [];
@@ -253,3 +253,6 @@
   </script>
 </body>
 </html>
+      
+          
+       
