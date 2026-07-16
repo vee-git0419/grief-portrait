@@ -103,14 +103,74 @@
         }
       };
     });
+    
+   // Silbo Gomero 
+    const silboHue = 205;
+    const silboSat = 70;
+    const silboBri = 85;
 
-    // Silbo 
     new p5(function(p) {
+      let particles = [];
+      let flowField;
+      let scl = 20;
+      let cols, rows;
+      let zoff = 0;
+
       p.setup = function() {
         p.createCanvas(400, 400).parent('silbo-canvas');
-        p.background(245);
-        p.fill(46, 94, 170);
-        p.circle(200, 200, 100);
+        p.colorMode(p.HSB, 360, 100, 100, 100);
+        p.background(200, 15, 98);
+        cols = p.floor(p.width / scl);
+        rows = p.floor(p.height / scl);
+        flowField = new Array(cols * rows);
+        for (let i = 0; i < 300; i++) {
+          particles.push({
+            pos: p.createVector(p.random(p.width), p.random(p.height)),
+            vel: p.createVector(0, 0),
+            acc: p.createVector(0, 0),
+            prevPos: p.createVector(p.random(p.width), p.random(p.height)),
+            hueOff: p.random(-20, 20)
+          });
+        }
+      };
+
+      p.draw = function() {
+        let yoff = 0;
+        for (let y = 0; y < rows; y++) {
+          let xoff = 0;
+          for (let x = 0; x < cols; x++) {
+            let idx = x + y * cols;
+            let angle = p.noise(xoff, yoff, zoff) * p.TWO_PI * 2;
+            flowField[idx] = p5.Vector.fromAngle(angle).setMag(1);
+            xoff += 0.1;
+          }
+          yoff += 0.1;
+        }
+        zoff += 0.003;
+
+        for (let i = 0; i < particles.length; i++) {
+          let pt = particles[i];
+          let x = p.floor(pt.pos.x / scl);
+          let y = p.floor(pt.pos.y / scl);
+          let idx = x + y * cols;
+          if (flowField[idx]) pt.acc.add(flowField[idx]);
+          pt.vel.add(pt.acc);
+          pt.vel.limit(2);
+          pt.pos.add(pt.vel);
+          pt.acc.mult(0);
+          
+          if (pt.pos.x > p.width) { pt.pos.x = 0; pt.prevPos.x = 0; }
+          if (pt.pos.x < 0) { pt.pos.x = p.width; pt.prevPos.x = p.width; }
+          if (pt.pos.y > p.height) { pt.pos.y = 0; pt.prevPos.y = 0; }
+          if (pt.pos.y < 0) { pt.pos.y = p.height; pt.prevPos.y = p.height; }
+          
+          let h = (silboHue + pt.hueOff + 360) % 360;
+          p.stroke(h, silboSat + p.random(-10, 10), silboBri + p.random(-10, 10), 25);
+          p.strokeWeight(1);
+          p.line(pt.pos.x, pt.pos.y, pt.prevPos.x, pt.prevPos.y);
+          pt.prevPos.x = pt.pos.x;
+          pt.prevPos.y = pt.pos.y;
+        }
       };
     });
 
