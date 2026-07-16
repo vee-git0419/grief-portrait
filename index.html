@@ -105,9 +105,12 @@
     });
     
    // Silbo Gomero 
-    const silboHue = 205;
-    const silboSat = 70;
-    const silboBri = 85;
+   // Silbo Gomero — whistled wind
+    const silboHue = 195;      // cyan-teal
+    const silboSat = 55;       // muted, like sea foam
+    const silboBri = 90;       // bright, airy
+    const particleCount = 600; // wind-like
+    const flowSpeed = 0.0015;  // meditative
 
     new p5(function(p) {
       let particles = [];
@@ -119,7 +122,7 @@
       p.setup = function() {
         p.createCanvas(400, 400).parent('silbo-canvas');
         p.colorMode(p.HSB, 360, 100, 100, 100);
-        p.background(200, 15, 98);
+        p.background(190, 10, 98);
         cols = p.floor(p.width / scl);
         rows = p.floor(p.height / scl);
         flowField = new Array(cols * rows);
@@ -129,7 +132,7 @@
             vel: p.createVector(0, 0),
             acc: p.createVector(0, 0),
             prevPos: p.createVector(p.random(p.width), p.random(p.height)),
-            hueOff: p.random(-20, 20)
+            hueOff: p.random(-30, 30)
           });
         }
       };
@@ -165,8 +168,8 @@
           if (pt.pos.y < 0) { pt.pos.y = p.height; pt.prevPos.y = p.height; }
           
           let h = (silboHue + pt.hueOff + 360) % 360;
-          p.stroke(h, silboSat + p.random(-10, 10), silboBri + p.random(-10, 10), 25);
-          p.strokeWeight(1);
+          p.stroke(h, silboSat + p.random(-10, 10), silboBri + p.random(-10, 10), 18);
+          p.strokeWeight(0.8);
           p.line(pt.pos.x, pt.pos.y, pt.prevPos.x, pt.prevPos.y);
           pt.prevPos.x = pt.pos.x;
           pt.prevPos.y = pt.pos.y;
