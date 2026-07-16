@@ -35,9 +35,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
   <script>
     // Ainu 
-    const ainuBaseHue = 'ア'.charCodeAt(0) % 360;
-    const ainuSat = 'イ'.charCodeAt(0) % 30 + 20;
-    const ainuBri = 'ヌ'.charCodeAt(0) % 20 + 60;
+    const ainuBaseHue = 50;
+    const ainuSat = 70;
+    const ainuBri = 90;
 
     new p5(function(p) {
       let particles = [];
@@ -49,7 +49,7 @@
       p.setup = function() {
         p.createCanvas(400, 400).parent('ainu-canvas');
         p.colorMode(p.HSB, 360, 100, 100, 100);
-        p.background(45, 8, 96);
+        p.background(40, 10, 98);
         cols = p.floor(p.width / scl);
         rows = p.floor(p.height / scl);
         flowField = new Array(cols * rows);
