@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Grief Portrait</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 40px; background: #F5F5F0; }
+    h1 { font-size: 2rem; }
+    .piece { margin: 60px 0; }
+    canvas { display: block; margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <h1>Grief Portrait</h1>
+  <p>Generative tributes to endangered languages.</p>
+  
+  <div class="piece">
+    <h2>アイヌ (Ainu)</h2>
+    <p>Isolate | Hokkaido, Japan | ~10 speakers | Critically Endangered</p>
+    <div id="ainu-canvas"></div>
+  </div>
+  
+  <div class="piece">
+    <h2>Silbo Gomero</h2>
+    <p>Indo-European | La Gomera, Canary Islands | ~22,000 speakers | Vulnerable</p>
+    <div id="silbo-canvas"></div>
+  </div>
+  
+  <div class="piece">
+    <h2>Nǀuu (Nǁng)</h2>
+    <p>Tuu | South Africa | ~3 speakers | Critically Endangered</p>
+    <div id="nuu-canvas"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script>
+    // Ainu sketch placeholder
+    new p5(function(p) {
+      p.setup = function() {
+        p.createCanvas(400, 400).parent('ainu-canvas');
+        p.background(245);
+        p.fill(200, 100, 80);
+        p.circle(200, 200, 100);
+      };
+    });
+  </script>
+</body>
+</html>
