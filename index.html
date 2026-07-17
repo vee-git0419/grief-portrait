@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Grief Portrait</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    #bg-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    
+    .landing-content {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+      opacity: 0;
+      animation: fadeIn 2s ease-out 0.5s forwards;
+    }
+    
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    
+    .landing-content h1 {
+      font-family: 'Crimson Text', Georgia, serif;
+      font-size: 4.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #C73E1D 0%, #2E5EAA 50%, #D4A017 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.1;
+      transform: translateY(20px);
+      opacity: 0;
+      animation: slideUp 1.5s ease-out 0.8s forwards;
+    }
+    
+    @keyframes slideUp {
+      to { transform: translateY(0); opacity: 1; }
+    }
+    
+    .landing-content .subtitle {
+      font-family: 'Crimson Text', Georgia, serif;
+      font-size: 1.25rem;
+      color: #555;
+      max-width: 520px;
+      margin-bottom: 3rem;
+      font-style: italic;
+      line-height: 1.6;
+      transform: translateY(15px);
+      opacity: 0;
+      animation: slideUp 1.5s ease-out 1.2s forwards;
+    }
+    
+    .language-list {
+      list-style: none;
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    
+    .language-list li {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: slideUp 1s ease-out forwards;
+    }
+    
+    .language-list li:nth-child(1) { animation-delay: 1.6s; }
+    .language-list li:nth-child(2) { animation-delay: 1.8s; }
+    .language-list li:nth-child(3) { animation-delay: 2.0s; }
+    
+    .language-list a {
+      font-family: 'Crimson Text', Georgia, serif;
+      color: #1A1A1A;
+      text-decoration: none;
+      font-size: 1.3rem;
+      position: relative;
+      padding-bottom: 4px;
+    }
+    
+    .language-list a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: #1A1A1A;
+      transition: width 0.4s ease;
+    }
+    
+    .language-list a:hover::after {
+      width: 100%;
+    }
+    
+    .about-link {
+      font-family: 'Crimson Text', Georgia, serif;
+      color: #888;
+      text-decoration: none;
+      font-size: 0.95rem;
+      opacity: 0;
+      animation: fadeIn 1s ease-out 2.3s forwards;
+      transition: color 0.3s;
+    }
+    
+    .about-link:hover {
+      color: #1A1A1A;
+    }
+    
+    @media (max-width: 600px) {
+      .landing-content h1 { font-size: 2.8rem; }
+      .language-list { gap: 30px; }
+      .language-list a { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div id="bg-canvas"></div>
+  
+  <div class="landing-content">
+    <h1>Grief Portrait</h1>
+    <p class="subtitle">Generative tributes to languages that may not survive the century. Each form grows from the phonetic texture of the language itself.</p>
+    <ul class="language-list">
+      <li><a href="ainu.html">アイヌ (Ainu)</a></li>
+      <li><a href="silbo.html">Silbo Gomero</a></li>
+      <li><a href="nuu.html">Nǀuu (Nǁng)</a></li>
+    </ul>
+    <a href="about.html" class="about-link">About this project →</a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script>
+    new p5(function(p) {
+      let particles = [];
+      p.setup = function() {
+        let canvas = p.createCanvas(window.innerWidth, window.innerHeight);
+        canvas.parent('bg-canvas');
+        
+        for (let i = 0; i < 60; i++) {
+          particles.push({
+            x: p.random(p.width),
+            y: p.random(p.height),
+            size: p.random(2, 10),
+            speedY: p.random(0.1, 0.4),
+            speedX: p.random(-0.2, 0.2),
+            hue: p.random([45, 200, 20]),
+            sat: p.random(30, 60),
+            bri: p.random(70, 90)
+          });
+        }
+      };
+      
+      p.draw = function() {
+        p.background(245, 245, 240, 30);
+        
+        for (let pt of particles) {
+          p.noStroke();
+          p.fill(pt.hue, pt.sat, pt.bri, 40);
+          p.circle(pt.x, pt.y, pt.size);
+          
+          pt.y -= pt.speedY;
+          pt.x += pt.speedX + p.sin(p.frameCount * 0.005 + pt.y * 0.01) * 0.2;
+          if (pt.y < -20) {
+            pt.y = p.height + 20;
+            pt.x = p.random(p.width);
+          }
+          if (pt.x < -20) pt.x = p.width + 20;
+          if (pt.x > p.width + 20) pt.x = -20;
+        }
+      };
+      
+      p.windowResized = function() {
+        p.resizeCanvas(window.innerWidth, window.innerHeight);
+      };
+    });
+  </script>
+</body>
+</html>
