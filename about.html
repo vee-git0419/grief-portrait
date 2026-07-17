@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>About — Grief Portrait</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Crimson Text', Georgia, serif;
+      background: #F5F5F0;
+      color: #1A1A1A;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    
+    #bg-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+    
+    .about-page {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 100px 40px 80px;
+    }
+    
+    .about-page h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #C73E1D 0%, #2E5EAA 50%, #D4A017 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.2;
+    }
+    
+    .subtitle {
+      font-size: 1.1rem;
+      color: #666;
+      font-style: italic;
+      margin-bottom: 3rem;
+    }
+    
+    .about-page h2 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    
+    .about-page h2:nth-of-type(1) { color: #C73E1D; }
+    .about-page h2:nth-of-type(2) { color: #2E5EAA; }
+    .about-page h2:nth-of-type(3) { color: #8B6914; }
+    .about-page h2:nth-of-type(4) { color: #5B4A3C; }
+    
+    .about-page p {
+      margin-bottom: 1.3rem;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    
+    .about-page em {
+      color: #C73E1D;
+      font-style: italic;
+    }
+    
+    .sources {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+    
+    .sources li {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    
+    .sources li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #C73E1D;
+    }
+    
+    .sources a {
+      color: #1A1A1A;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+      transition: border-color 0.3s;
+    }
+    
+    .sources a:hover {
+      border-bottom-color: #C73E1D;
+    }
+    
+    .back-about {
+      display: inline-block;
+      margin-top: 4rem;
+      padding: 12px 24px;
+      border: 1px solid #1A1A1A;
+      color: #1A1A1A;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+    }
+    
+    .back-about:hover {
+      background: #1A1A1A;
+      color: #F5F5F0;
+    }
+    
+    @media (max-width: 600px) {
+      .about-page h1 { font-size: 2.2rem; }
+      .about-page { padding: 60px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="bg-canvas"></div>
+  
+  <div class="about-page">
+    <h1>About Grief Portrait</h1>
+    <p class="subtitle">Computation as memorial</p>
+    
+    <h2>Concept</h2>
+    <p>Half of the world's 7,000 languages may vanish by 2100. Most will leave no audio recording, no dictionary, no trace. <em>Grief Portrait</em> asks: what if a language's final presence could be visual?</p>
+    <p>Each generative form grows from the phonetic structure of the language itself — Unicode values map to color, speaker count to density, vitality to saturation. The result is not a representation of the language, but a portrait of its absence.</p>
+    
+    <h2>Method</h2>
+    <p>Built with p5.js and Perlin noise flow fields. Each particle's hue derives from the language's name in its own script. Fewer particles for dying languages. Slower movement for contemplation. The code is the memorial.</p>
+    
+    <h2>Sources</h2>
+    <ul class="sources">
+      <li><a href="https://unesdoc.unesco.org/ark:/48223/pf0000187026">UNESCO Atlas of the World's Languages in Danger</a></li>
+      <li><a href="https://www.ethnologue.com">Ethnologue</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Ainu_language">Wikipedia — Ainu language</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Silbo_Gomero">Wikipedia — Silbo Gomero</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Nǁng_language">Wikipedia — Nǁng language</a></li>
+    </ul>
+    
+    <h2>Context</h2>
+    <p>This project was built as part of a portfolio exploring computation as a medium for social documentation — connecting technical skill to questions of memory, loss, and preservation.</p>
+    
+    <a href="index.html" class="back-about">← Back to gallery</a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script>
+    new p5(function(p) {
+      let particles = [];
+      
+      p.setup = function() {
+        let canvas = p.createCanvas(window.innerWidth, window.innerHeight);
+        canvas.parent('bg-canvas');
+        
+        for (let i = 0; i < 40; i++) {
+          particles.push({
+            x: p.random(p.width),
+            y: p.random(p.height),
+            size: p.random(3, 8),
+            speed: p.random(0.2, 0.6),
+            hue: p.random([30, 200, 25])
+          });
+        }
+      };
+      
+      p.draw = function() {
+        p.background(245, 245, 240, 50); // very faint trail effect
+        
+        for (let pt of particles) {
+          p.noStroke();
+          p.fill(pt.hue, 60, 85, 60); // visible but soft
+          p.circle(pt.x, pt.y, pt.size);
+          
+          pt.y -= pt.speed;
+          pt.x += p.sin(p.frameCount * 0.008 + pt.y * 0.005) * 0.3;
+          
+          if (pt.y < -20) {
+            pt.y = p.height + 20;
+            pt.x = p.random(p.width);
+          }
+        }
+      };
+      
+      p.windowResized = function() {
+        p.resizeCanvas(window.innerWidth, window.innerHeight);
+      };
+    });
+  </script>
+</body>
+</html>
