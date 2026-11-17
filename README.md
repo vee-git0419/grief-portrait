@@ -1,212 +1,443 @@
-Echoes of Silence
-A Generative Art Tribute to Endangered Languages
+<div align="center">
 
-<p align="center">
-<i>Every language carries a voice. Every disappearing voice leaves an echo.</i>
-</p>
+<br>
 
-<p align="center">
-<img src="https://img.shields.io/badge/Creative%20Coding-p5.js-ED225D?style=for-the-badge&logo=p5.js&logoColor=white" />
-<img src="https://img.shields.io/badge/Art-Generative%20Design-8B7355?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Theme-Language%20Preservation-526B58?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Canvas-800%C3%97800-444444?style=for-the-badge" />
-</p>
+<img src="https://img.shields.io/badge/✳-GRIEF%20PORTRAIT-8B7355?style=flat-square" />
 
-✦ The Concept
+<br><br>
+
+G R I E F   P O R T R A I T
+A GENERATIVE ART TRIBUTE TO ENDANGERED LANGUAGES
+
+<br>
+
+Every language carries a voice.
+Every disappearing voice leaves an echo.
+
+<br>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<br>
+
+<img src="https://img.shields.io/badge/CREATIVE%20CODING-p5.js-ED225D?style=for-the-badge&logo=p5.js&logoColor=white" />
+&nbsp;
+<img src="https://img.shields.io/badge/MEDIUM-GENERATIVE%20ART-8B7355?style=for-the-badge" />
+
+<br><br>
+
+<img src="https://img.shields.io/badge/THEME-LINGUISTIC%20PRESERVATION-526B58?style=for-the-badge" />
+&nbsp;
+<img src="https://img.shields.io/badge/CANVAS-800%20%C3%97%20800-444444?style=for-the-badge" />
+
+<br><br>
+
+THREE LANGUAGES   ·   THREE IDENTITIES   ·   THREE PORTRAITS
+
+<br>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<div align="center">
+
+
+
+01 — The Concept
 
 What does a disappearing language look like?
 
-Echoes of Silence is an experimental generative art project that transforms endangered languages into visual compositions.
+Grief Portrait is an experimental generative art project that translates the identities of endangered and vulnerable languages into visual compositions.
 
-Each artwork is a visual tribute to a language at risk of disappearing. Using phonetic characteristics, sample phrases, speaker populations, language families, and vitality classifications, the project generates abstract forms that represent the identity and condition of each language.
+Languages are more than systems of communication. They carry histories, cultural memory, traditions, and unique ways of understanding the world. When a language disappears, an entire perspective on human experience risks disappearing with it.
 
-Through particle systems, Perlin noise flow fields, and generative visual patterns, linguistic characteristics become movement, density, color, and texture.
+This project explores that loss through generative visuals.
 
-The result is a collection of three digital artworks exploring the relationship between language, identity, and cultural preservation.
+Each portrait begins with a language's phonetic character, linguistic family, speaker population, and vitality status. These characteristics inform a particle-based composition that evolves through movement, density, color, and transparency.
 
-When a language disappears, it takes with it a unique way of understanding the world. These artworks attempt to make that loss visible.
-✧ The Three Languages
+The resulting artworks are not literal representations of speech. They are abstract visual interpretations of linguistic presence and vulnerability.
 
-Each generative piece represents a different linguistic identity and conservation context.
+The intention is to create something that feels less like a data visualization and more like a collection of digital portraits.
+
+02 — The Three Portraits
+
+Each language has its own visual identity, informed by its linguistic characteristics and cultural context.
 
 01. Ainu — The Fading Voice
 
-<p align="center">
-<i>Isolate · Hokkaido, Japan</i>
-</p>
+<div align="center">
 
-Attribute	Details
-Language family	Isolate
-Vitality	Critically endangered
-Sample phrase	イランカラㇷ゚テ
-Transliteration	Irankarapte
-Meaning	Hello
-Accent	Generated artwork's own color
+アイヌ · Hokkaido, Japan
 
-Ainu represents a distinctive linguistic heritage with a complex history of language suppression and revitalization.
+<em>Critically Endangered</em>
 
-Its isolated language-family status gives the artwork a unique visual identity, while its phonetic sample provides the foundation for generative movement.
+</div>
 
-Visual direction: A quiet, organic composition with delicate movement and a restrained visual presence.
+Ainu is an Indigenous language of Japan and a language isolate, meaning it has no established relationship with any other living language family.
 
-02. Whistled Spanish — The Living Echo
+Its distinctive linguistic identity and complex history of cultural suppression make it an important subject for this project.
 
-<p align="center">
-<i>Indo-European · La Gomera, Canary Islands</i>
-</p>
+The visual composition uses warm amber tones, delicate particle trails, and restrained movement. The result is intended to feel intimate and contemplative, reflecting a language whose continued presence deserves recognition and preservation.
 
-Attribute	Details
-Language family	Indo-European
-Vitality	Vulnerable (project classification)
-Sample	Silbo Gomero
-Location	La Gomera, Spain
+Linguistic reference
 
-Silbo Gomero is a whistled form of communication that represents Spanish speech through whistles.
+Family: Isolate
+Location: Hokkaido, Japan
+Vitality: Critically endangered
+Speaker estimate used in the project: Approximately 10 native speakers
+Sample phrase: イランカラㇷ゚テ
+Transliteration: Irankarapte
+Meaning: Hello
 
-Unlike conventional spoken phonetics, its distinctive acoustic patterns offer an interesting opportunity to explore the relationship between sound, frequency, and visual movement.
+Visual direction: Muted amber, organic movement, delicate trails, and a quiet composition.
 
-Visual direction: Flowing, directional patterns inspired by whistles, waves, and sound transmission.
+02. Silbo Gomero — The Living Echo
+
+<div align="center">
+
+La Gomera · Canary Islands, Spain
+
+<em>Vulnerable — Project Classification</em>
+
+</div>
+
+Silbo Gomero is a whistled communication system associated with La Gomera in the Canary Islands. It adapts the sounds and structures of spoken Spanish into whistles, enabling communication across mountainous terrain.
+
+Its unusual relationship between language and sound offers an interesting opportunity for visual experimentation.
+
+The portrait takes inspiration from sound travelling through open space. Cyan and teal tones, flowing particle trails, and directional movement evoke wind, waves, and the transmission of sound.
+
+Unlike a conventional written or spoken representation, this composition explores language as movement through an environment.
+
+Linguistic reference
+
+Underlying language: Spanish
+Language family: Indo-European
+Location: La Gomera, Canary Islands
+Vitality: Vulnerable in this project's classification
+Example: Whistled Spanish communication
+
+Visual direction: Cool cyan and teal, flowing trails, airy movement, and directional forms.
 
 03. Nǀuu — The Last Whisper
 
-<p align="center">
-<i>Tuu · South Africa</i>
-</p>
+<div align="center">
 
-Attribute	Details
-Language family	Tuu
-Vitality	Critically endangered
-Sample phrase	ǂnā
-Meaning	Home (provided project gloss)
-Speaker context	Extremely small speaker community
+South Africa
 
-Nǀuu represents an extraordinary linguistic heritage, known for its distinctive click consonants and extremely small speaker community.
+<em>Critically Endangered</em>
 
-Its phonetic characteristics create an opportunity to explore fragmented structures, complex movement, and unusual visual rhythms.
+</div>
 
-Visual direction: Intricate, fragmented compositions that evoke the complexity and vulnerability of a rare linguistic system.
+Nǀuu, also known as Nǁng, belongs to the Tuu language family and is distinguished by its remarkable click consonants.
 
-✨ Key Features
-Feature	Description
-🎨 Generative Art	Creates unique visual compositions inspired by linguistic characteristics.
-🌊 Perlin Noise Flow Fields	Generates organic movement and directional particle trails.
-🔤 Phonetic Visualization	Uses sample words and linguistic characteristics as generative inputs.
-🌌 Particle Systems	Translates speaker population into particle density using logarithmic scaling.
-🎭 Language Family Mapping	Assigns color palettes according to linguistic family classifications.
-🌱 Vitality-Based Coloring	Represents language endangerment through color saturation and intensity.
-👻 Data Confidence Visualization	Uses line opacity to distinguish documented information from uncertain data.
-⏳ Slow Animation	Features a 30-second visual animation loop with hover-to-pause interaction.
-🖼️ Individual Artworks	Presents three distinct generative compositions with their linguistic context.
-📖 Cultural Storytelling	Combines generative design with language preservation and digital art.
-⚙️ The Technical Core
+Its phonetic structure offers a particularly compelling starting point for generative experimentation. Sounds such as ǀ, ǁ, and ǃ demonstrate the extraordinary diversity of human speech.
 
-The visual engine is built around two primary generative techniques.
+The visual portrait uses earthy rust and ochre tones, slower movement, and a sparse particle composition. Its restrained visual language evokes fragility while retaining a sense of persistence.
 
-1. Perlin Noise Flow Field
+The intention is not to suggest that the language is already gone, but to acknowledge the urgency of preserving the knowledge and voices of its remaining speakers.
 
-Perlin noise creates smooth, continuous variations in directional movement.
+Linguistic reference
 
-Instead of moving randomly, particles follow an organic flow field, producing patterns that resemble natural movement and interconnected structures.
+Family: Tuu
+Location: South Africa
+Vitality: Critically endangered
+Speaker estimate used in the project: Approximately 3 speakers
+Phonetic characteristics: Click consonants
 
-The flow-field angle is influenced by the frequency distribution of the language's phonetic characteristics.
+Visual direction: Rust and ochre, sparse trails, slower movement, and intricate textures.
 
-2. Particle Trails
+03 — The Visual Language
 
-Particles move through the flow field, leaving trails that gradually build the visual composition.
+The central design decision behind Grief Portrait is the translation of linguistic information into visual behaviour.
 
-Particle density is determined by speaker population using logarithmic scaling.
+Rather than displaying statistics independently, the project uses them as inspiration for the characteristics of each generative composition.
 
-This creates a visual relationship between the number of speakers and the density of the generated artwork.
+Parameter Mapping
 
-🧬 Parameter Mapping System
+<div align="center">
 
-The central concept of the project is translating linguistic information into generative visual parameters.
+FROM LINGUISTIC IDENTITY TO GENERATIVE FORM
 
-Parameter	Maps To	Visual Result
-Flow field angle	Character frequency distribution	Organic vs. chaotic movement
-Particle density	Speaker count (log scale)	Sparse for dying, dense for threatened
-Color hue	Language family	Warm for Afro-Asiatic, cool for Sino-Tibetan, neutral for isolates
-Color saturation	Vitality status	Faded for extinct, vivid for vulnerable
-Line opacity	Confidence in data	Ghostly for unverified, solid for documented
+</div>
 
-These mappings form an artistic visualization system rather than scientifically validated measurements of language vitality.
+<table width="100%">
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Represents</th>
+<th align="left">Visual Expression</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Flow Field Angle</strong></td>
+<td>Phonetic character and sound variation</td>
+<td>Organic or irregular directional movement</td>
+</tr>
+<tr>
+<td><strong>Particle Density</strong></td>
+<td>Speaker population</td>
+<td>Sparse or dense visual structures</td>
+</tr>
+<tr>
+<td><strong>Color Hue</strong></td>
+<td>Linguistic identity</td>
+<td>Distinct color palettes</td>
+</tr>
+<tr>
+<td><strong>Color Saturation</strong></td>
+<td>Language vitality</td>
+<td>Muted or vivid visual intensity</td>
+</tr>
+<tr>
+<td><strong>Line Opacity</strong></td>
+<td>Confidence in linguistic data</td>
+<td>Transparent or more defined trails</td>
+</tr>
+</tbody>
+</table>
 
-🎨 Visual Design System
+These mappings are artistic interpretations rather than scientifically validated measurements of language vitality.
 
-The interface follows a minimalist editorial aesthetic, allowing the generative artwork to remain the central focus.
+Each portrait uses individually configured visual parameters to create its own atmosphere.
+
+04 — Visual Design System
+
+The interface follows a minimal editorial aesthetic, allowing the generative artwork to remain the focal point.
 
 Color Palette
-Element	Color	Hex
-Background	Warm Off-White	#F5F5F0
-Primary Text	Near-Black	#1A1A1A
-Language Accents	Generated	Artwork-dependent
+
+The overall interface uses a warm off-white background and near-black typography to establish a quiet, gallery-like environment.
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+<div style="width:100px;height:55px;background:#F5F5F0;border:1px solid #ccc;"></div>
+<strong>Background</strong><br>
+<code>#F5F5F0</code>
+</td>
+<td align="center">
+<div style="width:100px;height:55px;background:#1A1A1A;"></div>
+<strong>Typography</strong><br>
+<code>#1A1A1A</code>
+</td>
+<td align="center">
+<div style="width:100px;height:55px;background:#C73E1D;"></div>
+<strong>Ainu Accent</strong><br>
+<code>#C73E1D</code>
+</td>
+<td align="center">
+<div style="width:100px;height:55px;background:#2E5EAA;"></div>
+<strong>Silbo Accent</strong><br>
+<code>#2E5EAA</code>
+</td>
+<td align="center">
+<div style="width:100px;height:55px;background:#8B6914;"></div>
+<strong>Nǀuu Accent</strong><br>
+<code>#8B6914</code>
+</td>
+</tr>
+</table>
+
+</div>
+
 Typography
-Crimson Text: Used for language names and expressive editorial headings.
-Inter: Used for metadata, descriptions, classifications, and supporting information.
-Canvas & Animation
-Element	Specification
-Canvas dimensions	800 × 800 px
-Alignment	Centered
-Layout	Generous margins and minimal interface elements
-Animation duration	30-second loop
-Interaction	Pauses on hover
-Background	#F5F5F0
-Composition — Ainu
 
-The Ainu artwork follows a particularly restrained composition:
+The typographic system combines two contrasting styles:
 
-Large generative canvas as the primary visual element.
-Language information positioned at the bottom-left.
-Small, understated metadata.
-Generous surrounding whitespace.
-Minimal distractions from the artwork itself.
-🛠️ Technology Stack
-Technology	Purpose
-HTML5	Webpage structure
-CSS3	Layout, typography, and visual styling
-JavaScript	Generative logic and animation
-p5.js	Canvas rendering and procedural artwork
-Perlin Noise	Organic flow-field generation
-Particle Systems	Movement and trail generation
+Crimson Text: An editorial serif used for language names and headings.
+Inter: A clean sans-serif used for metadata and supporting information.
 
-The project uses standard p5.js functionality without requiring a complex external rendering framework.
+The contrast gives the interface a balance between historical depth and contemporary digital presentation.
 
-🌐 Live Experience
+Composition and Layout
+Warm off-white backgrounds provide visual breathing room.
+Large generative canvases establish the primary visual focus.
+Language metadata is positioned discreetly near the bottom-left.
+Generous negative space creates a contemplative atmosphere.
+Minimal navigation keeps attention on the artwork.
+05 — Generative Engine
 
-Explore the artworks: Visit Live Website
+Grief Portrait is built using p5.js and JavaScript.
 
-Experience three generative pieces inspired by Ainu, Whistled Spanish, and Nǀuu.
+The visual system relies on two primary techniques: Perlin noise flow fields and particle trails.
 
-Each composition explores how linguistic identity can be translated into an abstract visual form.
+Perlin Noise Flow Fields
 
-📚 Research & Cultural Context
+Perlin noise generates smoothly varying values that can be translated into directional angles.
 
-The project draws attention to the relationship between linguistic diversity and cultural heritage.
+These angles form a vector-based flow field that guides the movement of particles across the canvas.
 
-Languages preserve histories, traditions, identities, and knowledge systems that cannot always be translated into another language.
+Unlike completely random movement, noise creates continuous directional transitions, producing organic and interconnected patterns.
 
-The three selected examples explore different linguistic situations:
+Particle Systems
 
-Ainu: A language isolate with a distinctive linguistic and cultural history.
-Silbo Gomero: A whistled communication system associated with Spanish on La Gomera.
-Nǀuu: A critically endangered Tuu language with distinctive click consonants.
+Particles move through the flow field, accumulating velocity and leaving translucent trails behind them.
 
-The artworks are intended as tributes, not representations of the full cultural identity of their speaker communities.
+Each particle maintains its previous position, allowing a line to be drawn between successive positions.
 
-🌱 Project Motivation
+As the animation progresses, individual trajectories accumulate into larger visual structures.
 
-Language loss is not simply the disappearance of words. It can also mean the loss of oral histories, cultural practices, traditional knowledge, and unique perspectives.
+The composition is therefore generated continuously rather than drawn as a static illustration.
 
-Through generative art, Echoes of Silence explores a different way of communicating this issue.
+Rendering Process
+text
+       INITIALIZE CANVAS
+               |
+               v
+       GENERATE FLOW FIELD
+               |
+               v
+       INITIALIZE PARTICLES
+               |
+               v
+       SAMPLE FLOW FIELD
+               |
+               v
+       UPDATE PARTICLE FORCE
+               |
+               v
+       UPDATE POSITION
+               |
+               v
+       DRAW TRANSLUCENT TRAILS
+               |
+               v
+       REPEAT EACH FRAME
 
-Rather than presenting linguistic endangerment through statistics alone, the project translates selected characteristics into visual experiences.
+06 — Technology Stack
 
-Every particle represents a voice. Every pattern represents an identity. Every fading form represents something worth remembering.
+<table width="100%">
+<thead>
+<tr>
+<th align="left">Technology</th>
+<th align="left">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTML5</td>
+<td>Page structure and content</td>
+</tr>
+<tr>
+<td>CSS3</td>
+<td>Layout, typography, and visual styling</td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td>Generative logic and particle behaviour</td>
+</tr>
+<tr>
+<td>p5.js 1.9.0</td>
+<td>Creative coding and canvas rendering</td>
+</tr>
+<tr>
+<td>Perlin Noise</td>
+<td>Organic flow field generation</td>
+</tr>
+<tr>
+<td>Vector Mathematics</td>
+<td>Particle direction, acceleration, and movement</td>
+</tr>
+</tbody>
+</table>
 
-<p align="center">
-<i>Not every disappearing voice should become silent.</i>
-<br/><br/>
-<b>✦ Echoes of Silence ✦</b>
-<br/>
-<sub>A digital tribute to the world's endangered languages.</sub>
-</p>
+The project uses standard p5.js functionality without requiring a complex rendering framework.
+
+07 — Project Structure
+text
+grief-portrait/
+│
+├── index.html
+│
+├── about.html
+│
+├── ainu.html
+│
+├── silbo.html
+│
+├── nuu.html
+│
+├── gallery.css
+│
+└── README.md
+
+
+Each language has its own HTML page and generative composition, while shared styling maintains visual consistency across the experience.
+
+08 — Running Locally
+
+Clone the repository:
+
+bash
+git clone https://github.com/vee-git0419/grief-portrait.git
+
+
+Navigate into the project directory:
+
+bash
+cd grief-portrait
+
+
+Start a local development server:
+
+bash
+python -m http.server 8000
+
+
+Open the following address in your browser:
+
+text
+http://localhost:8000
+
+
+The project uses p5.js from a CDN, so an internet connection is required to load the library.
+
+09 — Why These Languages?
+
+The three selections explore different dimensions of linguistic diversity.
+
+Ainu represents the distinctiveness of a language isolate and the importance of Indigenous linguistic preservation.
+Silbo Gomero explores how language can exist beyond conventional speech, transforming spoken communication into whistles.
+Nǀuu highlights the extraordinary phonetic diversity of human language and the urgency of documenting critically endangered linguistic knowledge.
+
+Together, they demonstrate that language is not simply a collection of words. It is sound, history, identity, and cultural memory.
+
+Each portrait is an attempt to give that identity a visual presence.
+
+10 — A Note on Representation
+
+Grief Portrait is an artistic interpretation of linguistic vulnerability, not a scientific model of language endangerment.
+
+Speaker estimates and vitality classifications are contextual references and can change over time. The visual parameters are creative choices, not direct measurements of linguistic health.
+
+The project aims to draw attention to endangered languages while recognizing the importance of the communities, speakers, and researchers working to preserve them.
+
+<div align="center">
+
+<br>
+
+Every language leaves a trace.
+
+Some echoes are quieter than others, but none are without meaning.
+
+<br>
+
+GRIEF PORTRAIT
+
+A generative art project exploring language, memory, and disappearance.
+
+<br>
+
+GitHub Repository
+
+<br>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</div>
+
+<br>
+
+</div>
