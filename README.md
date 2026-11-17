@@ -61,7 +61,9 @@ The intention is to create something that feels less like a data visualization a
 02 — The Three Portraits
 
 
+
 Each language has its own visual identity, informed by its linguistic characteristics and cultural context.
+
 
 01. Ainu — The Fading Voice
    
@@ -93,6 +95,7 @@ Meaning: Hello
 Visual direction: Muted amber, organic movement, delicate trails, and a quiet composition.
 
 02. Silbo Gomero — The Living Echo
+
    
 
 <div align="center">
