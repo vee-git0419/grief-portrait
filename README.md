@@ -102,7 +102,7 @@ Visual direction: Muted amber, organic movement, delicate trails, and a quiet co
 
 La Gomera · Canary Islands, Spain
 
-<em>Vulnerable — Project Classification</em>
+<em>Vulnerable </em>
 
 </div>
 
