@@ -37,11 +37,12 @@ THREE LANGUAGES   ·   THREE IDENTITIES   ·   THREE PORTRAITS
 <br>
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-<div align="center">
+
 
 
 
 01 — The Concept
+
 
 What does a disappearing language look like?
 
@@ -59,9 +60,11 @@ The intention is to create something that feels less like a data visualization a
 
 02 — The Three Portraits
 
+
 Each language has its own visual identity, informed by its linguistic characteristics and cultural context.
 
 01. Ainu — The Fading Voice
+   
 
 <div align="center">
 
@@ -90,6 +93,7 @@ Meaning: Hello
 Visual direction: Muted amber, organic movement, delicate trails, and a quiet composition.
 
 02. Silbo Gomero — The Living Echo
+   
 
 <div align="center">
 
@@ -118,6 +122,7 @@ Example: Whistled Spanish communication
 Visual direction: Cool cyan and teal, flowing trails, airy movement, and directional forms.
 
 03. Nǀuu — The Last Whisper
+   
 
 <div align="center">
 
@@ -146,6 +151,7 @@ Phonetic characteristics: Click consonants
 Visual direction: Rust and ochre, sparse trails, slower movement, and intricate textures.
 
 03 — The Visual Language
+
 
 The central design decision behind Grief Portrait is the translation of linguistic information into visual behaviour.
 
