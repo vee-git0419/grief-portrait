@@ -208,9 +208,11 @@ Each portrait uses individually configured visual parameters to create its own a
 
 04 — Visual Design System
 
+
 The interface follows a minimal editorial aesthetic, allowing the generative artwork to remain the focal point.
 
 Color Palette
+
 
 The overall interface uses a warm off-white background and near-black typography to establish a quiet, gallery-like environment.
 
@@ -352,6 +354,7 @@ text
 The project uses standard p5.js functionality without requiring a complex rendering framework.
 
 07 — Project Structure
+
 text
 grief-portrait/
 │
@@ -372,35 +375,9 @@ grief-portrait/
 
 Each language has its own HTML page and generative composition, while shared styling maintains visual consistency across the experience.
 
-08 — Running Locally
 
-Clone the repository:
+08 — Why These Languages?
 
-bash
-git clone https://github.com/vee-git0419/grief-portrait.git
-
-
-Navigate into the project directory:
-
-bash
-cd grief-portrait
-
-
-Start a local development server:
-
-bash
-python -m http.server 8000
-
-
-Open the following address in your browser:
-
-text
-http://localhost:8000
-
-
-The project uses p5.js from a CDN, so an internet connection is required to load the library.
-
-09 — Why These Languages?
 
 The three selections explore different dimensions of linguistic diversity.
 
@@ -412,7 +389,8 @@ Together, they demonstrate that language is not simply a collection of words. It
 
 Each portrait is an attempt to give that identity a visual presence.
 
-10 — A Note on Representation
+09 — A Note on Representation
+
 
 Grief Portrait is an artistic interpretation of linguistic vulnerability, not a scientific model of language endangerment.
 
@@ -427,16 +405,6 @@ The project aims to draw attention to endangered languages while recognizing the
 Every language leaves a trace.
 
 Some echoes are quieter than others, but none are without meaning.
-
-<br>
-
-GRIEF PORTRAIT
-
-A generative art project exploring language, memory, and disappearance.
-
-<br>
-
-GitHub Repository
 
 <br>
 
